@@ -21,7 +21,7 @@ header{
 }
 main{
     grid-area: main;
-    padding: 1em;
+    padding: 2em;
     max-width: 1050px;
     margin-right: auto;
     margin-left: 0;
@@ -29,7 +29,7 @@ main{
 aside{
     grid-area: side;
     width: 30vw;
-    padding: 1em;
+    padding: 2em;
     max-width: 450px;
     margin-right: 0;
     margin-left: auto;
@@ -43,6 +43,9 @@ footer{
 }
 iframe{
     width: 100%;
+}
+ul{
+    padding-left: 2em;
 }
 a{
     color: blue;

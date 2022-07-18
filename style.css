@@ -3,7 +3,7 @@ html{
 }
 body{
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     margin: 0;
     font-family: 'M PLUS 1 Code', sans-serif;
     display: grid;

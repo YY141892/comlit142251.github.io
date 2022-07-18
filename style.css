@@ -2,12 +2,12 @@ html{
     height: 100%;
 }
 body{
+    width: 100%;
     min-height: 100vh;
     margin: 0;
     font-family: 'M PLUS 1 Code', sans-serif;
-    grid-template-areas: "header header" "side main" "footer footer";
-    display: grid; width: 100%;
-    grid-template-columns: 30vw 1fr;
+    display: grid;
+    grid-template-areas: "header" "contents" "footer";
     grid-template-rows: auto 1fr auto;
 }
 header{
@@ -19,20 +19,27 @@ header{
     justify-content: center;
     align-items: center;
 }
+.main-wrapper{
+    grid-area: contents;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-areas: "nav nav" "side main";
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: auto 1fr;
+}
+nav{
+    grid-area: nav;
+}
 main{
     grid-area: main;
-    padding: 2em;
-    max-width: 1050px;
-    margin-right: auto;
-    margin-left: 0;
+    padding: 0 2em 2em 2em;
 }
 aside{
     grid-area: side;
-    width: 30vw;
-    padding: 2em;
-    max-width: 450px;
-    margin-right: 0;
-    margin-left: auto;
+    /*border-right: 2px solid rgb(23,40,139);*/
+    padding: 0 2em 2em 2em;
 }
 footer{
     grid-area: footer;
@@ -54,6 +61,20 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.breadcrumbs{
+    list-style: none;
+}
+.breadcrumbs li{
+    display: inline;
+    list-style: none;
+}
+.breadcrumbs li:after{
+    content: '>';
+    padding: 0 0.2em;
+}
+.breadcrumbs li:last-child:after {
+    content: '';
 }
 .link{
     transition: 0.5s;

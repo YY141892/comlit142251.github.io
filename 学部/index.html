@@ -5,7 +5,7 @@
     <title>電通大紹介ページ</title>
 
     <!--スタイルシートの指定-->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!--アイコンの指定-->
     <link rel="icon" href="../icon.gif" />
@@ -17,7 +17,16 @@
 
     <!--CSSかくならこの下へ-->
     <style>
-        
+        header{background: rgba(0, 0, 0, 0.4) url(denntuhuukann.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+        body{background-color: rgb(150, 250, 255);}
+        .icon{width: 100%;
+  height: 100%;
+  object-fit: cover;}
     </style>
 </head>
 <body>
@@ -30,7 +39,7 @@
             <!--パンくずリスト-->
             <ol class="breadcrumbs">
                 <li><a href="../">Top</a></li>
-                <li>見出しのテンプレート</li>
+                <li>どんなことをするの？</li>
             </ol>
         </nav>
         <aside>
@@ -95,52 +104,29 @@
             </ul>
         </aside>
         <main>
-            <h2>タイトル</h2>
-            <p>説明文とかを書いてください。<br>リンク用のテンプレも用意しときました。いい感じに改造して使ってください。<br><a href="template_page.html">ページのテンプレートはここ</a> </p>
-    
-            <!--アイコンみたいなリンク作りたいならこれ-->
+            <h2>どんなことをするの？</h2>
+            <p>電通大ではコンピュータや理科について勉強します。
+            <br>電通大には3つの学部があります。学部とは小学校でいうクラスみたいなものです。コンピュータをいっぱい勉強するクラスや理科をいっぱい勉強するクラスなどがあります。</p>
             <div>
-                <h3>アイコンのリンクです</h3>
-                <p>説明文がいらない単純なリンクだとこっちのほうがいいかも…</p>
+                <h5>下のアイコンをタッチするとそれぞれの学部について詳しく知ることができます。</h5>
                 <div class="imglinks">
-                    <a href="ここにパス名(相対パス)" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
+                    <a href="../faculty/cluster1.html" class="imglink">
+                        <img class="icon" src="AI.jpg">
+                        <p class="center">情報系</p>
                     </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
+                    <a href="../faculty/cluster2.html" class="imglink">
+                        <img class="icon" src="robot1.png">
+                        <p class="center">融合系</p>
                     </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
+                    <a href="../faculty/cluster3.html" class="imglink">
+                        <img class="icon" src="science.jpeg">
+                        <p class="center">理科系</p>
                     </a>
                 </div>
             </div>
             <!--ここまで-->
     
-            <!--箱みたいなリンク作るならこれ-->
-            <div>
-                <h3>ボックス型のリンクです</h3>
-                <p>ちょっとした説明や項目名が長くなる時はこっちのほうがいいかも。写真の埋め込みもできるよ。リンクの設定がちょっと難しいけど、コピペすれば多分OK</p>
-                <div class="boxlink" onclick="location.href='ここにパス名(相対パス)'">
-                    <div>
-                        <!--一応divで囲ってるけど、これはなくてもいい-->
-                        <h4>項目名</h4>
-                        <p>説明文入れてもいいよ</p>
-                    </div>
-                </div>
-                <div class="boxlink boxlink_flex" onclick="location.href='ここにパス名(相対パス)'">
-                    <img src="test.png">
-                    <div>
-                        <!--こっちの場合はdiv必須です-->
-                        <h4>項目名</h4>
-                        <p>写真を入れて横並びにしたい時は、Class名「boxlink_flex」を追加してね。</p>
-                    </div>
-                </div>
-            </div>
-                
-            <!--ここまで-->
+          
         </main>
     </div>
     <footer>

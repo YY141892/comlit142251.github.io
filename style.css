@@ -13,7 +13,11 @@ body{
 header{
     grid-area: header;
     padding: 10px 10% 10px 10%;
-    background: rgb(23,40,139);
+    background: rgba(0, 0, 0, 0.4) url(denntuhuukann.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
     color: white;
     display: flex;
     justify-content: center;

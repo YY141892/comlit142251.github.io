@@ -12,6 +12,7 @@ body{
 }
 header{
     grid-area: header;
+    height : 10em;
     padding: 10px 10% 10px 10%;
     background: rgba(0, 0, 0, 0.4) url(photo/denntuhuukann.png);
     background-repeat: no-repeat;

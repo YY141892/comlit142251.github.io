@@ -1,12 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>電通大紹介ページ</title>
+
+    <!--スタイルシートの指定-->
+    <link rel="stylesheet" href="../style.css">
+
+    <!--アイコンの指定-->
+    <link rel="icon" href="../icon.gif" />
+
+    <!--Googleフォントの設定-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400&display=swap" rel="stylesheet">
+
+    <!--CSSかくならこの下へ-->
+    <style>
+        
+    </style>
 </head>
 <body>
-    Now loading...
+    
+    <header onclick="location.href='../index.html'">
+        <h1>電通大紹介ページ</h1>
+    </header>
+    <div class="main-wrapper">
+        <nav>    
+            <!--パンくずリスト-->
+            <ol class="breadcrumbs">
+                <li><a href="../">Top</a></li>
+                <li>見出しのテンプレート</li>
+            </ol>
+        </nav>
+        <aside>
+            <!--サイドバーはあまりいじらないほうがいいかも…-->
+            <h2>リンク</h2>
+            <ul>
+                <li>
+                    <h3>電通大の紹介</h3>
+                    <ul>
+                        <li class="link_parent">
+                            <h4><a href="../summary/">概要</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../summary/information.html">情報</a></h4></li>
+                                <li><h4><a href="../summary/character.html">キャラクター</a></h4></li>
+                                <li><h4><a href="../summary/event.html">年中行事</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../faculty/">学部紹介</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../faculty/cluster1.html">Ⅰ類</a></h4></li>
+                                <li><h4><a href="../faculty/cluster2.html">Ⅱ類</a></h4></li>
+                                <li><h4><a href="../faculty/cluster2.html">Ⅲ類</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../study/">電通大の強み</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../study/programing.html">プログラミング</a></h4></li>
+                                <li><h4><a href="../study/robot.html">ロボット</a></h4></li>
+                                <li><h4><a href="../study/laser.html">レーザー</a></h4></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> 
+                    <h3>大学とは</h3>
+                    <ul>
+                        <li class="link_parent">
+                            <h4><a href="../enter/">入学方法</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../enter/general.html">一般入試</a></h4></li>
+                                <li><h4><a href="../enter/recommended.html">推薦入試</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../course/">学部</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../course/bunri.html">文系理系選択</a></h4></li>
+                                <li><h4><a href="../course/kokushi.html">国立私立選択</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../student/">学生生活</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../student/study.html">勉強</a></h4></li>
+                                <li><h4><a href="../student/life.html">生活</a></h4></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <h2>タイトル</h2>
+            <p>説明文とかを書いてください。<br>リンク用のテンプレも用意しときました。いい感じに改造して使ってください。<br><a href="template_page.html">ページのテンプレートはここ</a> </p>
+    
+            <!--アイコンみたいなリンク作りたいならこれ-->
+            <div>
+                <h3>アイコンのリンクです</h3>
+                <p>説明文がいらない単純なリンクだとこっちのほうがいいかも…</p>
+                <div class="imglinks">
+                    <a href="ここにパス名(相対パス)" class="imglink">
+                        <img class="icon" src="test.png">
+                        <p class="center">文字</p>
+                    </a>
+                    <a href="" class="imglink">
+                        <img class="icon" src="test.png">
+                        <p class="center">文字</p>
+                    </a>
+                    <a href="" class="imglink">
+                        <img class="icon" src="test.png">
+                        <p class="center">文字</p>
+                    </a>
+                </div>
+            </div>
+            <!--ここまで-->
+    
+            <!--箱みたいなリンク作るならこれ-->
+            <div>
+                <h3>ボックス型のリンクです</h3>
+                <p>ちょっとした説明や項目名が長くなる時はこっちのほうがいいかも。写真の埋め込みもできるよ。リンクの設定がちょっと難しいけど、コピペすれば多分OK</p>
+                <div class="boxlink" onclick="location.href='ここにパス名(相対パス)'">
+                    <div>
+                        <!--一応divで囲ってるけど、これはなくてもいい-->
+                        <h4>項目名</h4>
+                        <p>説明文入れてもいいよ</p>
+                    </div>
+                </div>
+                <div class="boxlink boxlink_flex" onclick="location.href='ここにパス名(相対パス)'">
+                    <img src="test.png">
+                    <div>
+                        <!--こっちの場合はdiv必須です-->
+                        <h4>項目名</h4>
+                        <p>写真を入れて横並びにしたい時は、Class名「boxlink_flex」を追加してね。</p>
+                    </div>
+                </div>
+            </div>
+                
+            <!--ここまで-->
+        </main>
+    </div>
+    <footer>
+        <p>国立大学法人電気通信大学<br><br>〒182-8585<br>東京都調布市調布ヶ丘1-5-1</p>
+        <small>&copy; 2022 電気通信大学コンピュータリテラシ授業グループ</small>
+    </footer>
 </body>
 </html>

@@ -1,12 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>電通大紹介ページ</title>
+
+    <!--スタイルシートの指定-->
+    <link rel="stylesheet" href="../style.css">
+
+    <!--アイコンの指定-->
+    <link rel="icon" href="../icon.gif" />
+
+    <!--Googleフォントの設定-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400&display=swap" rel="stylesheet">
+
+    <!--CSSかくならこの下へ-->
+    <style>
+        .flex_img{
+            display: flex;
+            align-items: center;
+        }
+        .flex_img p{
+            flex-grow: 1;
+        }
+        .flex_img img{
+            flex-grow: 0;
+            width: 200px;
+            max-width: 50%;
+        }
+    </style>
 </head>
 <body>
-    Now loading...
+    
+    <header onclick="location.href='../index.html'">
+        <h1>電通大紹介ページ</h1>
+    </header>
+    <div class="main-wrapper">
+        <nav>    
+            <!--パンくずリスト-->
+            <ol class="breadcrumbs">
+                <li><a href="../">Top</a></li>
+                <li><a href="../summary/">概要</a></li>
+                <li>情報</li>
+            </ol>
+        </nav>
+        <aside>
+            <!--サイドバーはあまりいじらないほうがいいかも…-->
+            <h2>リンク</h2>
+            <ul>
+                <li>
+                    <h3>電通大の紹介</h3>
+                    <ul>
+                        <li class="link_parent">
+                            <h4><a href="../summary/">概要</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../summary/information.html">情報</a></h4></li>
+                                <li><h4><a href="../summary/character.html">キャラクター</a></h4></li>
+                                <li><h4><a href="../summary/event.html">年中行事</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../faculty/">学部紹介</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../faculty/cluster1.html">Ⅰ類</a></h4></li>
+                                <li><h4><a href="../faculty/cluster2.html">Ⅱ類</a></h4></li>
+                                <li><h4><a href="../faculty/cluster2.html">Ⅲ類</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../study/">電通大の強み</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../study/programing.html">プログラミング</a></h4></li>
+                                <li><h4><a href="../study/robot.html">ロボット</a></h4></li>
+                                <li><h4><a href="../study/laser.html">レーザー</a></h4></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> 
+                    <h3>大学とは</h3>
+                    <ul>
+                        <li class="link_parent">
+                            <h4><a href="../enter/">入学方法</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../enter/general.html">一般入試</a></h4></li>
+                                <li><h4><a href="../enter/recommended.html">推薦入試</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../course/">学部</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../course/bunri.html">文系理系選択</a></h4></li>
+                                <li><h4><a href="../course/kokushi.html">国立私立選択</a></h4></li>
+                            </ul>
+                        </li>
+                        <li class="link_parent">
+                            <h4><a href="../student/">学生生活</a></h4>
+                            <ul class="link_child">
+                                <li><h4><a href="../student/study.html">勉強</a></h4></li>
+                                <li><h4><a href="../student/life.html">生活</a></h4></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <div>
+                <h2>電通大の詳しい情報</h2>
+                <p>電通大に関する基本的な情報をまとめました。</p>
+            </div>
+            <div>
+                <h3>名前</h3>
+                <ul>
+                    <li>
+                        <h4>正式名称</h4>
+                        <p>国立大学法人 電気通信大学</p>
+                    </li>
+                    <li>
+                        <h4>英語名</h4>
+                        <p><i>The University of Electro-Communications</i></p>
+                    </li>
+                    <li>
+                        <h4>略称</h4>
+                        <p>UEC</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>ロゴ</h3>
+                <ul>
+                    <li>
+                        <h4>校章</h4>
+                        <div class="flex_img">
+                            <p>
+                                建学の精神（大学をつくった人の思い）を表している、学校の象徴のマークです。背景の曲線は「リサジュー曲線」という数学のグラフです。理系大学生になると勉強できますよ！
+                            </p>
+                            <img src="img/kousyou.gif">
+                        </div>
+                    </li>
+                    <li>
+                        <h4>コミュニケーションマーク</h4>
+                        <div class="flex_img">
+                            <p>
+                                電通大の学部が新しく変わったときに作られたマークです。「生まれ変わる大学」のイメージと、「親しみのある大学」のイメージが込められています。
+                            </p>
+                            <img src="img/mark.jpg">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>場所</h3>
+                <p>
+                    電通大は東京都調布市にあります。調布市は東京23区の西側、自然と都会が融合した住みやすい街です。電通大最寄り駅には京王線の特急が止まるため、都心へのアクセスも良好です。
+                </p>
+                <p>
+                    大学構内では、大きな建物の間にある緑が心地よく、カルガモの行進が見れたりします。
+                </p>
+                <div class="page_img" >
+                    <img src="img/uec.jpg">
+                </div>
+            </div>
+            <div>
+                <h3>アクセス</h3>
+                <p>最寄り駅の調布駅からは徒歩5分ほどです。</p>
+                <div class="page_img">
+                    <img src="img/map.gif">
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>国立大学法人電気通信大学<br><br>〒182-8585<br>東京都調布市調布ヶ丘1-5-1</p>
+        <small>&copy; 2022 電気通信大学コンピュータリテラシ授業グループ</small>
+    </footer>
 </body>
 </html>

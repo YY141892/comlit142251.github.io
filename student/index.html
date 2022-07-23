@@ -100,44 +100,29 @@
     
             <!--アイコンみたいなリンク作りたいならこれ-->
             <div>
-                <h3>アイコンのリンクです</h3>
-                <p>説明文がいらない単純なリンクだとこっちのほうがいいかも…</p>
-                <div class="imglinks">
-                    <a href="ここにパス名(相対パス)" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
+                <main>
+            <h2>学生生活</h2>
+            <p>大学生の勉強は中学生や高校生と何が違うの？生活はどんな感じ？そんな疑問を持つ人に向けて電通大での学生生活を勉強と普段の生活に分けて紹介します．</p>
+    
+            
+            <!--箱みたいなリンク作るならこれ-->
+            <h3>ページリンク</h3>
+            <div class="boxlink boxlink_flex" onclick="location.href='ここにパス名(相対パス)'" style="background-color: rgb(51, 176, 221);">
+                <img src="studylogo.png">
+                <div class="study">
+                    <!--こっちの場合はdiv必須です-->
+                    <h3>勉強</h3>
+                    <p>電通大学生がしている勉強について解説しています．</p>
+                </div>
+            </div>    
+            <div class="boxlink boxlink_flex" onclick="location.href='ここにパス名(相対パス)'" style="background-color: rgb(255, 144, 0);">
+                <img src="lifelogo.png">
+                <div>
+                    <!--こっちの場合はdiv必須です-->
+                    <h3>普段の生活</h3>
+                    <p>電通大生の日常生活をリアルに解説しています．</p>
                 </div>
             </div>
-            <!--ここまで-->
-    
-            <!--箱みたいなリンク作るならこれ-->
-            <div>
-                <h3>ボックス型のリンクです</h3>
-                <p>ちょっとした説明や項目名が長くなる時はこっちのほうがいいかも。写真の埋め込みもできるよ。リンクの設定がちょっと難しいけど、コピペすれば多分OK</p>
-                <div class="boxlink" onclick="location.href='ここにパス名(相対パス)'">
-                    <div>
-                        <!--一応divで囲ってるけど、これはなくてもいい-->
-                        <h4>項目名</h4>
-                        <p>説明文入れてもいいよ</p>
-                    </div>
-                </div>
-                <div class="boxlink boxlink_flex" onclick="location.href='ここにパス名(相対パス)'">
-                    <img src="test.png">
-                    <div>
-                        <!--こっちの場合はdiv必須です-->
-                        <h4>項目名</h4>
-                        <p>写真を入れて横並びにしたい時は、Class名「boxlink_flex」を追加してね。</p>
-                    </div>
-                </div>
             </div>
                 
             <!--ここまで-->

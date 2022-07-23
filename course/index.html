@@ -13,7 +13,7 @@
     <!--Googleフォントの設定-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400&display=swap" rel="stylesheet">
 
     <!--CSSかくならこの下へ-->
     <style>
@@ -30,7 +30,7 @@
             <!--パンくずリスト-->
             <ol class="breadcrumbs">
                 <li><a href="../">Top</a></li>
-                <li>見出しのテンプレート</li>
+                <li>学部</li>
             </ol>
         </nav>
         <aside>
@@ -95,51 +95,23 @@
             </ul>
         </aside>
         <main>
-            <h2>タイトル</h2>
-            <p>説明文とかを書いてください。<br>リンク用のテンプレも用意しときました。いい感じに改造して使ってください。<br><a href="template_page.html">ページのテンプレートはここ</a> </p>
+            <h2>学部</h2>
+            <p>大学では小中高校と違い文系、理系や、個人の選んだ学部によって学ぶことが違います。
+                また、国公立の大学を選ぶか、私立の大学を選ぶかによってもその人の大学生活、その後の生活は大きく違ってくるのでよく知ってから選ぶ必要があります。<br>ここではその学部と国立私立の特ちょうとその比かくをのせています。 </p>
     
             <!--アイコンみたいなリンク作りたいならこれ-->
             <div>
-                <h3>アイコンのリンクです</h3>
-                <p>説明文がいらない単純なリンクだとこっちのほうがいいかも…</p>
+                <p>写真をクリックですぐに確認！</p>
                 <div class="imglinks">
-                    <a href="ここにパス名(相対パス)" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
+                    <a href="bunri.html" class="imglink">
+                        <img class="icon" src="../photo/rikeibunkei.jpg">
+                        <p class="center">理系文系選択</p>
                     </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
+                    <a href="kokushi.html" class="imglink">
+                        <img class="icon" src="../photo/kouritushiritu.jpg">
+                        <p class="center">国立私立選択</p>
                 </div>
             </div>
-            <!--ここまで-->
-    
-            <!--箱みたいなリンク作るならこれ-->
-            <div>
-                <h3>ボックス型のリンクです</h3>
-                <p>ちょっとした説明や項目名が長くなる時はこっちのほうがいいかも。写真の埋め込みもできるよ。リンクの設定がちょっと難しいけど、コピペすれば多分OK</p>
-                <div class="boxlink" onclick="location.href='ここにパス名(相対パス)'">
-                    <div>
-                        <!--一応divで囲ってるけど、これはなくてもいい-->
-                        <h4>項目名</h4>
-                        <p>説明文入れてもいいよ</p>
-                    </div>
-                </div>
-                <div class="boxlink boxlink_flex" onclick="location.href='ここにパス名(相対パス)'">
-                    <img src="test.png">
-                    <div>
-                        <!--こっちの場合はdiv必須です-->
-                        <h4>項目名</h4>
-                        <p>写真を入れて横並びにしたい時は、Class名「boxlink_flex」を追加してね。</p>
-                    </div>
-                </div>
-            </div>
-                
             <!--ここまで-->
         </main>
     </div>

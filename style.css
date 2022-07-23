@@ -5,7 +5,7 @@ body{
     width: 100%;
     min-height: 100%;
     margin: 0;
-    font-family: 'M PLUS 1 Code', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     display: grid;
     grid-template-areas: "header" "contents" "footer";
     grid-template-rows: auto 1fr auto;
@@ -23,6 +23,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+header h1{
+    font-size: 300%;
+    font-weight: normal;
 }
 .main-wrapper{
     grid-area: contents;

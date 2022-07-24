@@ -17,7 +17,29 @@
 
     <!--CSSかくならこの下へ-->
     <style>
-        
+        header{background: rgba(0, 0, 0, 0.4) url(denntuhuukann.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+        .p{margin-top: 50px;}
+        .box {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 5%;
+            align-items: center;
+        }
+        .pict {
+            width: 250%;
+            margin-left: 3%;
+        }
+        .pict img {
+            width: 100%;
+            height:auto;
+            box-shadow: 10px 10px 10px #7a7a7a;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +52,7 @@
             <!--パンくずリスト-->
             <ol class="breadcrumbs">
                 <li><a href="../">Top</a></li>
-                <li>見出しのテンプレート</li>
+                <li>入学方法</li>
             </ol>
         </nav>
         <aside>
@@ -95,52 +117,37 @@
             </ul>
         </aside>
         <main>
-            <h2>タイトル</h2>
-            <p>説明文とかを書いてください。<br>リンク用のテンプレも用意しときました。いい感じに改造して使ってください。<br><a href="template_page.html">ページのテンプレートはここ</a> </p>
-    
-            <!--アイコンみたいなリンク作りたいならこれ-->
+            <div class="box">
+                <div class="text">
+                    <h1>入学方法</h1>
+		    <h3>どうやって電通大に入るの？</h3>
+                    <p>まず大学は小学校、中学校、高校の後に皆さんが行く場所です。そして小学校の入り方と違うのは入るために試験をすることです。その試験に合格すれば大学に入ることができます。
+                    </p>
+                </div>
+                <div class="pict"><img src="homework-2521144_640.jpg" alt=""></div>
+              </div>
+              <div class="p"><p>
+                試験は主に2パターンあります。1つ目が一般試験といって自分自身で勉強して試験を受ける方法です。2つ目は自分の良いところを大学にアピールする試験を受けます。</p></div>
             <div>
-                <h3>アイコンのリンクです</h3>
-                <p>説明文がいらない単純なリンクだとこっちのほうがいいかも…</p>
-                <div class="imglinks">
-                    <a href="ここにパス名(相対パス)" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
-                    <a href="" class="imglink">
-                        <img class="icon" src="test.png">
-                        <p class="center">文字</p>
-                    </a>
+                <h3>ページリンク</h3>
+                <div class="boxlink boxlink_flex" onclick="location.href='../enter/general.html'" style="background-color:#faedf8;">
+                    <img src="nys1901150003-p1.jpg" style="border-radius: 15%; margin-top: 3%; margin-bottom: 3%; margin-right: 7%; margin-left: 3%;">
+                    <div>
+                        <h1>一般入試</h1>
+                        <p>自分自身で勉強して試験を受ける方法です。</p>
+                    </div>
+                </div>
+                <div class="boxlink boxlink_flex" onclick="location.href='../enter/recommended.html'" style="background-color:#e8ebff;">
+                    <img src="column_26.png" style="border-radius: 15%; margin-top: 3%; margin-bottom: 3%; margin-right: 7%; margin-left: 3%;">
+                    <div>
+                        <h1>推薦入試</h1>
+                        <p>自分の良いところを大学にアピールする試験を受けます。</p>
+                    </div>
                 </div>
             </div>
             <!--ここまで-->
     
-            <!--箱みたいなリンク作るならこれ-->
-            <div>
-                <h3>ボックス型のリンクです</h3>
-                <p>ちょっとした説明や項目名が長くなる時はこっちのほうがいいかも。写真の埋め込みもできるよ。リンクの設定がちょっと難しいけど、コピペすれば多分OK</p>
-                <div class="boxlink" onclick="location.href='ここにパス名(相対パス)'">
-                    <div>
-                        <!--一応divで囲ってるけど、これはなくてもいい-->
-                        <h4>項目名</h4>
-                        <p>説明文入れてもいいよ</p>
-                    </div>
-                </div>
-                <div class="boxlink boxlink_flex" onclick="location.href='ここにパス名(相対パス)'">
-                    <img src="test.png">
-                    <div>
-                        <!--こっちの場合はdiv必須です-->
-                        <h4>項目名</h4>
-                        <p>写真を入れて横並びにしたい時は、Class名「boxlink_flex」を追加してね。</p>
-                    </div>
-                </div>
-            </div>
-                
-            <!--ここまで-->
+          
         </main>
     </div>
     <footer>

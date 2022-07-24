@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>電通大紹介ページ</title>
@@ -11,27 +12,52 @@
     <link rel="icon" href="../icon.gif" />
 
     <!--Googleフォントの設定-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
 
     <!--CSSかくならこの下へ-->
     <style>
+        .pic img {
+            width: 300px;
+            height: auto;
+            margin-left: 5em;
+        }
+
+        .box1 {
+            margin-bottom: 3em;
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5%;
+        }
+
+        .box3 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0%;
+        }
         
+        .lbox {
+            margin-top: 4em;
+        }
     </style>
 </head>
+
 <body>
-    
+
     <header onclick="location.href='../index.html'">
         <h1>電通大紹介ページ</h1>
     </header>
     <div class="main-wrapper">
-        <nav>    
+        <nav>
             <!--パンくずリスト-->
             <ol class="breadcrumbs">
                 <li><a href="../">Top</a></li>
-                <li><a href="../template/template_index.html">見出しのテンプレート</a></li>
-                <li>本文のテンプ　レート</li>
+                <li><a href="../template/template_index.html">学生生活</a></li>
+                <li>生活</li>
             </ol>
         </nav>
         <aside>
@@ -44,51 +70,81 @@
                         <li class="link_parent">
                             <h4><a href="../summary/">概要</a></h4>
                             <ul class="link_child">
-                                <li><h4><a href="../summary/information.html">情報</a></h4></li>
-                                <li><h4><a href="../summary/character.html">キャラクター</a></h4></li>
-                                <li><h4><a href="../summary/event.html">年中行事</a></h4></li>
+                                <li>
+                                    <h4><a href="../summary/information.html">情報</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../summary/character.html">キャラクター</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../summary/event.html">年中行事</a></h4>
+                                </li>
                             </ul>
                         </li>
                         <li class="link_parent">
                             <h4><a href="../faculty/">学部紹介</a></h4>
                             <ul class="link_child">
-                                <li><h4><a href="../faculty/cluster1.html">Ⅰ類</a></h4></li>
-                                <li><h4><a href="../faculty/cluster2.html">Ⅱ類</a></h4></li>
-                                <li><h4><a href="../faculty/cluster2.html">Ⅲ類</a></h4></li>
+                                <li>
+                                    <h4><a href="../faculty/cluster1.html">Ⅰ類</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../faculty/cluster2.html">Ⅱ類</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../faculty/cluster2.html">Ⅲ類</a></h4>
+                                </li>
                             </ul>
                         </li>
                         <li class="link_parent">
                             <h4><a href="../study/">電通大の強み</a></h4>
                             <ul class="link_child">
-                                <li><h4><a href="../study/programing.html">プログラミング</a></h4></li>
-                                <li><h4><a href="../study/robot.html">ロボット</a></h4></li>
-                                <li><h4><a href="../study/laser.html">レーザー</a></h4></li>
+                                <li>
+                                    <h4><a href="../study/programing.html">プログラミング</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../study/robot.html">ロボット</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../study/laser.html">レーザー</a></h4>
+                                </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li> 
+                <li>
                     <h3>大学とは</h3>
                     <ul>
                         <li class="link_parent">
                             <h4><a href="../enter/">入学方法</a></h4>
                             <ul class="link_child">
-                                <li><h4><a href="../enter/general.html">一般入試</a></h4></li>
-                                <li><h4><a href="../enter/recommended.html">推薦入試</a></h4></li>
+                                <li>
+                                    <h4><a href="../enter/general.html">一般入試</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../enter/recommended.html">推薦入試</a></h4>
+                                </li>
                             </ul>
                         </li>
                         <li class="link_parent">
                             <h4><a href="../course/">学部</a></h4>
                             <ul class="link_child">
-                                <li><h4><a href="../course/bunri.html">文系理系選択</a></h4></li>
-                                <li><h4><a href="../course/kokushi.html">国立私立選択</a></h4></li>
+                                <li>
+                                    <h4><a href="../course/bunri.html">文系理系選択</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../course/kokushi.html">国立私立選択</a></h4>
+                                </li>
                             </ul>
                         </li>
                         <li class="link_parent">
                             <h4><a href="../student/">学生生活</a></h4>
                             <ul class="link_child">
-                                <li><h4><a href="../student/study.html">勉強</a></h4></li>
-                                <li><h4><a href="../student/life.html">生活</a></h4></li>
+                                <li>
+                                    <h4><a href="../student/study.html">勉強</a></h4>
+                                </li>
+                                <li>
+                                    <h4><a href="../student/life.html">生活</a></h4>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -97,11 +153,82 @@
         </aside>
         <main>
             <div>
-                <h2>タイトル</h2>
-                <p>本文用のページです。自由に作ってください。</p>
+                <h2>大学生は休みの日に何をしているの？</h2>
+                <div>
+                    <p class="box1">
+                        人によってまったく異なります．
+                        逆に言えば，自由な時間はその人の好きにしていいんです．
+                        一日中ゲームをしててもよし，料理やプログラミングの勉強をしてもよし，何でもありなんです．
+                        ただ時間の使い方が自由な代わりに，あとで時間の使い方を後悔しても，それは自分の責任だということを心に留めておいてください．
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>本文とか？</p>
+            <div class="lbox">
+                <h3>大学生って一日中遊んでばっかりじゃないの？</h3>
+                <p>
+                    そのような人も中にはいます．小学校では考えられませんよね．
+                    日本の大学は入学するのがむずかしいけど，卒業は簡単といわれています．
+                    全ての授業で小学校のように出席をとるわけではないので，授業をサボれるだけサボるといる人もいるらしいです．
+                </p>
+                <div>
+                    <p>
+                        授業を普通に受けていれば，1日のうちで2〜3時間は家で自由な時間があります．
+                        自由な時間を次のようにして過ごす人がいます．
+                    <ul>
+                        <li>宿題に取り組む</li>
+                        <li>サークル活動を楽しむ</li>
+                        <li>友達と遊びに出かける</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="lbox">
+                <h3>大学生の宿題ってどんな感じなの？</h3>
+                <div class="box1">
+                    <div class="text1">
+                        小学校の時よりは難しいですが，計算問題の宿題が出たり，<a href="../student/study.html">勉強</a>のページで紹介した実験の結果をまとめる宿題などがあります．
+                        友達といっしょにやらなければいけない課題もあります．
+                        多くはインターネット上で提出しなければいけないので，提出しめきりに遅れると言い訳ができません．
+                        <a href="../student/homework.png" target="_blank">ここ</a>をクリックすると提出の時に使うグーグルクラスルームというアプリの写真が見れます．
+                    </div>
+                </div>
+            </div>
+            <div class="lbox">
+                <h3>サークルって何？</h3>
+                <div>
+                    <div>
+                        <div class="box2">
+                            <div class="text">
+                                <p>
+                                    サークルは同じ大学の仲間で一緒に楽しむ一種の習い事のようなものです．
+                                    習い事というと，真面目っぽい感じがしてしまいますが，本当にいろんなサークルがあります．
+                                    電気通信大学におけるサークルがまとまったページは<a
+                                    href="https://www.uec.ac.jp/campus/extracurricular/club.html">こちら</a>です．
+                                </p>
+                            </div>
+                            <div class="pic">
+                                <img src="free1.png" alt="サークル活動のイメージ画像です．">
+                            </div>
+                        </div>
+                            <div class="box3">
+                            <div class="text">
+                                <p>
+                                    またサークルとは少しちがうものとして，委員会というものもあります．
+                                    みなさんも小学校の時に何かの委員だったことでしょう．
+                                    小学校の委員会とちがい，自分たちのしたい企画を自分たちで行うことができます．
+                                    例えば，電通大には生協学生委員会という委員会があります
+                                    (電通大生協のホームページは<a href="https://www.univcoop.jp/uec/index.html">こちら</a>)．
+                                    生協のお店には学生にとってうれしいものがたくさんおいてあるのですが，なんとそこで販売されるグッズの企画ができます！
+                                    他にも電気通信大学のお祭りである調布祭の企画を行う委員会や，新入生を歓迎する会の企画を行う委員会もあります．
+                                </p>
+                            </div>
+                            <div class="pic">
+                                <img src="GI.jpg" alt="生協学生委員会のロゴです">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -110,4 +237,5 @@
         <small>&copy; 2022 電気通信大学コンピュータリテラシ授業グループ</small>
     </footer>
 </body>
+
 </html>
